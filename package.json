@@ -1,0 +1,37 @@
+{
+  "name": "un-shitty-fy",
+  "version": "0.1.0",
+  "description": "CLI to de-duplicate, prune unreachable code, and flag oversized files.",
+  "bin": {
+    "un-shitty-fy": "dist/cli.js"
+  },
+  "scripts": {
+    "clean": "rimraf dist",
+    "build": "tsc -p tsconfig.json",
+    "dev": "tsx src/cli.ts --help",
+    "test": "vitest run",
+    "test:watch": "vitest watch"
+  },
+  "keywords": [
+    "cli",
+    "code-quality",
+    "cleanup",
+    "typescript"
+  ],
+  "author": "",
+  "license": "MIT",
+  "engines": {
+    "node": ">=18"
+  },
+  "dependencies": {
+    "commander": "^11.1.0"
+  },
+  "devDependencies": {
+    "@types/node": "^20.10.6",
+    "rimraf": "^5.0.5",
+    "tsx": "^4.7.1",
+    "typescript": "^5.3.3",
+    "vitest": "^1.2.2"
+  }
+}
+
